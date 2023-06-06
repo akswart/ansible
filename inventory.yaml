@@ -1,0 +1,13 @@
+kubernetes:
+  vars:
+    ansible_user: ansible_user
+  hosts:
+    ansible1:
+      ansible_host: 192.168.1.111
+    ansible2:
+      ansible_host: 192.168.1.112
+    ansible3:
+      ansible_host: 192.168.1.113
+    ansible4:
+      ansible_host: 192.168.1.114
+      

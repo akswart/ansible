@@ -1,0 +1,13 @@
+- name: Update all systems
+  hosts: kubernetes
+  remote_user: ansible_user
+  become: yes
+  
+  tasks:
+    - name: DNF upgrade
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
+        update_cache: true
+
+    
